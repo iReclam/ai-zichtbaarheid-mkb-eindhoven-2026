@@ -1,0 +1,13 @@
+{
+  "title": "AI visibility of SMEs in Eindhoven 2026 (open data)",
+  "upload_type": "dataset",
+  "description": "<p>Open data for the study <em>AI visibility of SMEs in Eindhoven 2026</em> by iReclam (online marketing agency, Eindhoven, the Netherlands), 10 November 2026: technical AI-readiness scan of 879 business websites (773 measurable) from OpenStreetMap, recognition of 100 businesses by AI assistants with web search, and 112 recommendation answers across 28 categories. Data are anonymised (no business names or websites). Method, prompts and scripts included.</p><p>Publication: https://ireclam.nl/ai-zichtbaarheid-mkb-eindhoven-2026/</p>",
+  "creators": [{"name": "iReclam"}],
+  "license": "cc-by-4.0",
+  "language": "nld",
+  "keywords": ["generative engine optimization", "GEO", "AI search", "ChatGPT", "Perplexity", "Gemini", "SME", "Eindhoven", "structured data", "OpenStreetMap"],
+  "related_identifiers": [
+    {"identifier": "https://ireclam.nl/ai-zichtbaarheid-mkb-eindhoven-2026/", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "https://github.com/iReclam/geo-readiness-check", "relation": "requires", "scheme": "url"}
+  ]
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+title: "AI visibility of SMEs in Eindhoven 2026 (open data)"
+authors:
+  - name: "iReclam"
+    website: "https://ireclam.nl"
+date-released: 2026-11-16
+version: 1.0.0
+license: CC-BY-4.0
+url: "https://ireclam.nl/ai-zichtbaarheid-mkb-eindhoven-2026/"
+repository-code: "https://github.com/iReclam/ai-zichtbaarheid-mkb-eindhoven-2026"
+keywords: [generative engine optimization, GEO, AI search, ChatGPT, Perplexity, Gemini, SME, Eindhoven, structured data]

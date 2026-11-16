@@ -1,0 +1,94 @@
+{
+ "gescand": 879,
+ "meetbaar": 773,
+ "score_gem": 66.7,
+ "score_mediaan": 66,
+ "score>=80": 24.8,
+ "score<50": 12.5,
+ "blokkeert_AI_zoekbot": 2.1,
+ "blokkeert_enige_AI_bot": 5.3,
+ "geen_robots_txt": 7.6,
+ "business_schema": 42.4,
+ "schema_adres_en_tel": 13.6,
+ "sameAs": 17.3,
+ "faq_schema": 2.6,
+ "llms_txt": 16.3,
+ "sitemap": 88.1,
+ "meta_description": 70.8,
+ "onleesbaar_zonder_js": 14.0,
+ "noindex": 1.2,
+ "h1_precies_1": 52.1,
+ "geen_jsonld": 40.4,
+ "bots_geblokkeerd": [
+  [
+   "CCBot",
+   36
+  ],
+  [
+   "GPTBot",
+   34
+  ],
+  [
+   "ClaudeBot",
+   32
+  ],
+  [
+   "Google-Extended",
+   32
+  ],
+  [
+   "Applebot-Extended",
+   31
+  ],
+  [
+   "OAI-SearchBot",
+   10
+  ],
+  [
+   "ChatGPT-User",
+   10
+  ],
+  [
+   "PerplexityBot",
+   10
+  ],
+  [
+   "Claude-SearchBot",
+   8
+  ],
+  [
+   "Perplexity-User",
+   8
+  ],
+  [
+   "Bingbot",
+   8
+  ],
+  [
+   "Claude-User",
+   7
+  ]
+ ],
+ "per_categorie": {
+  "amenity": {
+   "n": 219,
+   "gem": 64.7
+  },
+  "shop": {
+   "n": 312,
+   "gem": 67.0
+  },
+  "health": {
+   "n": 78,
+   "gem": 63.5
+  },
+  "office": {
+   "n": 149,
+   "gem": 71.1
+  },
+  "craft": {
+   "n": 15,
+   "gem": 60.4
+  }
+ }
+}
