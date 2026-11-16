@@ -1,5 +1,7 @@
 # AI visibility of SMEs in Eindhoven 2026 — open data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24281712.svg)](https://doi.org/10.5281/zenodo.24281712)
+
 **AI knows you, but doesn't recommend you.** Research by [iReclam](https://ireclam.nl) (online marketing agency, Eindhoven, the Netherlands), 10 November 2026.
 
 - Publication (Dutch): https://ireclam.nl/ai-zichtbaarheid-mkb-eindhoven-2026/
@@ -29,7 +31,7 @@ API keys are read from environment variables (`GOOGLE_API_KEY`, `OPENROUTER_API_
 - Code: [MIT](LICENSE).
 
 ## Cite
-See [CITATION.cff](CITATION.cff). A DOI (Zenodo) is added with the first release.
+iReclam (2026). *AI visibility of SMEs in Eindhoven 2026 (open data)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24281712 — version 1.0.0: https://doi.org/10.5281/zenodo.24281713. See also [CITATION.cff](CITATION.cff).
 
 ---
 
