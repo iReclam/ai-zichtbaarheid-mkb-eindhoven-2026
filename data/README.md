@@ -31,4 +31,6 @@ Stratified sample from part 1. Per platform (`gemini_`, `openai_`, `perplexity_`
 
 ## part3-recommendations.csv (112 rows)
 One row per answer: `category`, `question_term` (Dutch term used in the question), `model`, `round` (1 or 2), `error`, `n_urls_in_answer`, `n_dataset_businesses_named` (how many businesses from the OSM dataset were named; names not published).
-`part3-summary.json`: `n_in_cats` (641 businesses in these 28 categories), `ever_recommended` (45), `per_cat` [category, businesses in dataset, businesses named at least once], `score_hit` / `score_miss` (mean technical score of named vs. never-named businesses).
+`part3-summary.json`: `n_in_cats` (641 businesses in these 28 categories), `ever_recommended` (45; matched on domain **or** OSM business name ≥5 characters — domain-only matching gives 25), `per_cat` [category, dataset businesses in that category, distinct dataset businesses (from all 879, any category) named in that category's answers — so this column does not add up to 45], `score_hit` / `score_miss` (mean technical score of named vs. never-named businesses).
+
+Note: `n_dataset_businesses_named` in part3-recommendations.csv uses domain matching only (script 4). The 28 categories were selected on ≥7 occurrences in the raw OSM list (1,395), before cleaning.

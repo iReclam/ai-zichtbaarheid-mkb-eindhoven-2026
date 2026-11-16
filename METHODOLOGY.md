@@ -11,7 +11,7 @@ Uitgevoerd door iReclam (online marketingbureau, Eindhoven) op 10 november 2026.
 - **Bron:** OpenStreetMap (Overpass API), gemeente Eindhoven (admin_level 8), alle objecten met een website-tag en een tag `shop`, `craft`, `office`, `healthcare` of een relevante `amenity` (o.a. restaurant, café, tandarts, huisarts, dierenarts, rijschool, kliniek, apotheek) → 1.395 objecten (`scripts/1-bedrijven-osm.py`).
 - **Opschoning:** ketens (brand-tag / gedeelde ketendomeinen), overheid, onderwijs, verenigingen, dubbele domeinen en social-media-profielen als 'website' verwijderd → **879 unieke bedrijfswebsites**.
 - **Deel 2:** gestratificeerde steekproef van **100 bedrijven** (20 per hoofdcategorie: horeca, winkels, zorg, kantoren/dienstverlening, aangevuld).
-- **Deel 3:** **28 categorieën** met ≥7 bedrijven in de dataset (samen **641 bedrijven**).
+- **Deel 3:** **28 categorieën** die in de ruwe OSM-lijst (1.395) minstens 7 keer voorkwamen; na opschoning zitten daar samen **641 bedrijven** in (per categorie 0–208, zie `data/part3-summary.json`; drogisterij valt na het verwijderen van ketens op 0).
 
 KvK-gegevens zijn niet gebruikt (geen open data). De dataset is daardoor niet representatief voor 'alle MKB in Eindhoven', wel voor bedrijven die in OpenStreetMap met een website staan.
 
@@ -31,6 +31,7 @@ KvK-gegevens zijn niet gebruikt (geen open data). De dataset is daardoor niet re
 - Vraag per categorie: *"Welke {categorie} in Eindhoven raad je aan? Noem er 5 met hun website."*
 - GPT-4.1-mini (`:online`) en Perplexity Sonar, elk **2 rondes** → 28 × 2 × 2 = **112 antwoorden**.
 - **Aanbevolen** = domein of bedrijfsnaam (OSM-naam, ≥5 tekens) van een bedrijf uit de dataset komt voor in antwoord of bronnen.
+- Telling in twee stappen: `scripts/4-ai-aanbeveling.py` matcht alleen op **domein** (25 van de 641 bedrijven); daarna is in de analyse ook op **bedrijfsnaam** gematcht → **45 van de 641** (dit is het gepubliceerde cijfer). De naam-matchingstap staat niet als apart script in deze repo; omdat de antwoordteksten bedrijfsnamen bevatten, zijn ze niet gepubliceerd.
 
 ## Resultaten (kern)
 | Maat | Waarde |
